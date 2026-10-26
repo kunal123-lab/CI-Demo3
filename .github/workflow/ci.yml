@@ -1,0 +1,16 @@
+name: CI pipeline
+on: 
+  push:
+    branch:
+      - main
+jobs:
+  build:
+    RUNS-ON: ubuntu-latest
+    steps:
+      - user: actions/chechout @v4
+
+      - name: display message
+        run: echo "continous integration excutes successfully"
+      - name : list files
+        run: is  
+
